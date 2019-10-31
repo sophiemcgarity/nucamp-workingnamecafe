@@ -1,0 +1,27 @@
+{
+  "name": "nucampportfolio",
+  "version": "1.0.0",
+  "description": "NuCamp Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophiemcgarity/nucamp-workingnamecafe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sophiemcgarity/nucamp-workingnamecafe/issues"
+  },
+  "homepage": "https://github.com/sophiemcgarity/nucamp-workingnamecafe#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
