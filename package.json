@@ -1,0 +1,32 @@
+{
+  "name": "nucampportfolio",
+  "version": "1.0.0",
+  "description": "NuCamp Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sophiemcgarity/nucamp-workingnamecafe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sophiemcgarity/nucamp-workingnamecafe/issues"
+  },
+  "homepage": "https://github.com/sophiemcgarity/nucamp-workingnamecafe#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1"
+  }
+}

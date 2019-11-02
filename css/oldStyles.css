@@ -1,0 +1,9 @@
+*{
+ font-family: sans-serif;
+}
+
+.jumbotron{
+    background-image: url("image/seasonalJumbotron.jpg");
+    background-size: cover;
+}
+
