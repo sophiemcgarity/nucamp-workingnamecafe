@@ -1,12 +1,12 @@
 $background-color: #272727;
 
 *{
-    background-color: #272727;
+    background-color: $background-color;
     font-family: sans-serif;
 }
    
 .jumbotron{
-    background-image: url("image/seasonalJumbotron.jpg");
+    background-image: url("images/seasonalJumbotron.jpg");
     background-size: cover;
 }
    
