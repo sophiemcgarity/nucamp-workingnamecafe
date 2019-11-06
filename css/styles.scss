@@ -1,12 +1,27 @@
-$background-color: #272727;
+$main-color: #272727;
+$seasonal-color: #CC9165;
 
-*{
-    background-color: $background-color;
+body{
+    background-color: $main-color;
     font-family: sans-serif;
 }
    
 .jumbotron{
     background-image: url("images/seasonalJumbotron.jpg");
     background-size: cover;
+}
+
+.seasonal{
+    background-color: $seasonal-color;
+}
+
+.horizontalImg{
+        width: 40%;
+        height: auto;
+}
+
+.verticalImg{
+        width: 50%;
+        height: auto;
 }
    

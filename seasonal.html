@@ -14,20 +14,77 @@
     <title>Cafe Cesura</title>
 </head>
 <body>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+                <div class="container">
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Menu</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Hot Drinks</a>
+                                    <a class="dropdown-item" href="#">Cold Drinks</a>
+                                    <a class="dropdown-item" href="#">Food</a>
+                                    <a class="dropdown-item" href="seasonal.html">Seasonal</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+        <header class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-4">Seasonal Specialties</h1>
+                    </div>
+                </div> 
+                <div class="row">   
+                    <div class="col">
+                        <button class="btn btn-secondary">Check them out</button>
+                    </div>
+                </div> 
+            </div>  
+        </header>
+
     <div class="container">
-        <div class="row">
+        <div class="row row-content align-items-center seasonal">
+            <div class="col-sm-4 col-md-3">
+                <h2 class="text-sm-right">Peppermint Hot Chocolate</h2>
+            </div>
             <div class="col">
-                <h2>Peppermint Hot Chocolate</h2>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail verticalImg" src="images/mintHc.jpg" alt="Peppermint Hot Chocolate">
+                </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-content align-items-center seasonal">
             <div class="col">
-                <h2>Spiced Apple Cider</h2>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail horizontalImg" src="images/cider.jpg" alt="Peppermint Hot Chocolate">
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <h2 class="text-sm-left">Spiced Apple Cider</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-content align-items-center seasonal">
+            <div class="col-sm-4 col-md-3">
+                <h2 class="text-sm-right">Egg Nog Latte</h2>
+            </div>
             <div class="col">
-                <h2>Egg Nog Latte</h2>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail verticalImg" src="images/eggnog.jpg" alt="Peppermint Hot Chocolate">
+                </div>
             </div>
         </div>
     </div>

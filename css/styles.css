@@ -1,21 +1,18 @@
-body{
-  font-family: sans-serif; 
+body {
   background-color: #272727;
-}
+  font-family: sans-serif; }
 
 .jumbotron {
-  background-image: url("../images/seasonalJumbotron.jpg");
-  background-size: cover;
-}
+  background-image: url("images/seasonalJumbotron.jpg");
+  background-size: cover; }
 
-#menuSquares img{
-  display: block;
-  margin: 0 auto;
-  height: auto;
-}
+.seasonal {
+  background-color: #CC9165; }
 
-.site-footer{
-  color: white;
-  padding: 20px 0;
-  background-color: #472103;
-}
+.horizontalImg {
+  width: 40%;
+  height: auto; }
+
+.verticalImg {
+  width: 50%;
+  height: auto; }
