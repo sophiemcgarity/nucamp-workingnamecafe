@@ -6,17 +6,22 @@ body{
     font-family: sans-serif;
 }
    
-.jumbotron{
+.backgroundImage{
     background-image: url("images/seasonalJumbotron.jpg");
-    background-size: cover;
 }
 
 .seasonal{
     background-color: $seasonal-color;
+    margin-bottom: 2%;
+    color: white;
+
+    img{
+        margin: 2%;
+    }
 }
 
 .horizontalImg{
-        width: 40%;
+        width: 55%;
         height: auto;
 }
 
@@ -24,4 +29,19 @@ body{
         width: 50%;
         height: auto;
 }
-   
+
+.site-footer{
+    padding: 20px 0;
+}
+
+.thumbnail{
+    position: relative;
+}
+
+.caption{
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
