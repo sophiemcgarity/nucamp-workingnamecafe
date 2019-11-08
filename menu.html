@@ -324,6 +324,9 @@
         </div>
     </div>
     <!-- End of Modal-->
+   
+    
+    <!-- footer-->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -359,15 +362,15 @@
             </div>
         </div>
     </footer>
+ <!--Button to top-->
+ <button id="topBtn" class="btn btn-warning btn-lg" title="Go to top">Top</button>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
         $(function(){
-
-        $(document).ready(function(){
             $('#orderModal').on('show.bs.modal', function (e) {
             var price = $(e.relatedTarget).data('price');
             var name = $(e.relatedTarget).data('name');
@@ -376,9 +379,27 @@
             $('#price').html(price);
          $('#name').html(name);
     
-        });
+      
     });
+
+    var btn = $('#topBtn');
+
+    $(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        btn.fadeIn();
+    } else {
+        btn.fadeOut();
+    }
 });
+
+    btn.click(function(){
+        $('html, body').animate({
+            scrollTop : 0},500);
+        return false;
+    });
+
+});
+
     </script>
 </body>
 
