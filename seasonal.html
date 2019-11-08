@@ -8,40 +8,42 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
         <!-- Additional CSS-->
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="css/styles.css"/>
     <title>Cafe Cesura</title>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
                 <div class="container">
                     <div class="collapse navbar-collapse justify-content-center">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Menu</a>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                    aria-expanded="false" href="#">Menu</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Hot Drinks</a>
-                                    <a class="dropdown-item" href="#">Cold Drinks</a>
-                                    <a class="dropdown-item" href="#">Food</a>
+                                    <a class="dropdown-item" href="menu.html#menuHot">Hot Drinks</a>
+                                    <a class="dropdown-item" href="menu.html#menuCold">Cold Drinks</a>
+                                    <a class="dropdown-item" href="menu.html#menuFood">Food</a>
                                     <a class="dropdown-item" href="seasonal.html">Seasonal</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
     
-        <header class="jumbotron jumbotron-fluid">
+        <div id="seasonal" class="bg text-center">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -54,40 +56,71 @@
                     </div>
                 </div> 
             </div>  
-        </header>
+        </div>
 
     <div class="container">
-        <div class="row row-content align-items-center seasonal">
-            <div class="col-sm-4 col-md-3">
-                <h2 class="text-sm-right">Peppermint Hot Chocolate</h2>
+        <div class="row row-content align-items-center seasonal mt-5">
+            <div class="col-7">
+                <h2>Peppermint Hot Chocolate</h2>
+                <p>Warm hot chocolate combined with peppermint syrup for a seasonal treat.</p>
             </div>
-            <div class="col">
+            <div class="col-5">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail verticalImg" src="images/mintHc.jpg" alt="Peppermint Hot Chocolate">
+                    <img class="d-flex" src="images/mintHc.jpg" alt="Peppermint Hot Chocolate">
                 </div>
             </div>
         </div>
+       
         <div class="row row-content align-items-center seasonal">
-            <div class="col">
+            <div class="col-5">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail horizontalImg" src="images/cider.jpg" alt="Peppermint Hot Chocolate">
+                    <img class="d-flex" src="images/cider.jpg" alt="Peppermint Hot Chocolate">
                 </div>
             </div>
-            <div class="col-sm-4 col-md-3">
-                <h2 class="text-sm-left">Spiced Apple Cider</h2>
+            <div class="col-7">
+                <h2 class="text-sm-left ml-3">Spiced Apple Cider</h2>
+                <p class="ml-3">Fresh pressed apple juice steamed with cinnamon to create a spicy and warming beverage.</p>
             </div>
         </div>
+
         <div class="row row-content align-items-center seasonal">
-            <div class="col-sm-4 col-md-3">
-                <h2 class="text-sm-right">Egg Nog Latte</h2>
+            <div class="col-7">
+                <h2>Egg Nog Latte</h2>
+                <p>Cinnamon and nutmeg spiced egg nog blended with espresso and steamed milk.</p>
             </div>
-            <div class="col">
+            <div class="col-5">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail verticalImg" src="images/eggnog.jpg" alt="Peppermint Hot Chocolate">
+                    <img class="d-flex" src="images/eggnog.jpg" alt="Peppermint Hot Chocolate">
                 </div>
             </div>
         </div>
     </div>
+
+    <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i
+                                class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234</a><br />
+                    </div>
+                    <div class="col text-center">
+                        <a class="btn btn-social-icon btn-instagram btn-secondary" href="http://instagram.com/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook btn-secondary" href="http://facebook.com/"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter btn-secondary" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google btn-secondary" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col text-center">
+                        <a role="button" class="btn btn-link" href="mailto:campsite@nucsmp.co"><i
+                                class="fa fa-envelope-o fa-lg text-primary"></i> cesura@cafe.co </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
