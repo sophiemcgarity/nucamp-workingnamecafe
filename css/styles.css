@@ -2,6 +2,7 @@ body {
   background-color: #272727;
   color: white; }
 
+
 .navbar-nav {
   width: 100%; }
   .navbar-nav a {
@@ -47,10 +48,26 @@ body {
   background-image: url("../images/contactJumbotron.jpg");
   background-size: cover; }
 
+.backgroundImage {
+  background-image: url("images/seasonalJumbotron.jpg"); }
+
+.seasonal {
+  background-color: #CC9165;
+  margin-bottom: 2%;
+  color: white; }
+  .seasonal img {
+    margin: 2%; }
+
+.horizontalImg {
+  width: 55%;
+  height: auto; }
+
+
 #menuSquares img {
   display: block;
   margin: 0 auto;
   height: auto; }
+
 
 #menuSquares a {
   color: white; }
@@ -58,14 +75,38 @@ body {
 #menuSquares a:hover {
   color: #915A31; }
 
+.site-footer {
+  padding: 20px 0; }
+
+
 .thumbnail {
   position: relative; }
 
 .caption {
+  color: white;
   position: absolute;
   top: 45%;
   left: 0;
   width: 100%; }
+
+#menuJumbotron {
+  background-image: url("../images/menuJumbotron.jpg");
+  background-size: cover; }
+
+#contactJumbotron {
+  background-image: url("../images/contactJumbotron.jpg");
+  background-size: cover; }
+
+body {
+  font-family: sans-serif;
+  background-color: #272727;
+  color: white; }
+
+#menuSquares img {
+  display: block;
+  margin: 0 auto;
+  height: auto; }
+
 
 .site-footer {
   color: white;
