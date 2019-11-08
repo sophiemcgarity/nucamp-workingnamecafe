@@ -1,18 +1,72 @@
 $main-color: #272727;
 $seasonal-color: #CC9165;
+$mediumBrown-color: #915A31;
+$redBrown-color: #7A3805;
+$darkBrown-color: #472103;
 
 
 body{
     background-color: $main-color;
-    font-family: sans-serif;
+    color: white;
 }
+
+.navbar-nav{
+    width: 100%;
+    a{
+        text-align: center;
+    }
+}
+
+.navbar.solid{
+    background-color: $redBrown-color;
+    transition: background-color 1s ease 0s;
+    box-shadow: 0 0 4px grey;
+}
+
+.navbar-nav{
+    li{
+        a{
+            color: $redBrown-color;
+            transition: color 1s ease 0s;
+        }
+    } 
+}
+
+@media (max-width: 500px){
+    .navbar{
+        background-color: $redBrown-color;    
+    }
+}
+
+
+.bg{
+    background-image: url("../images/bgSeasonal.jpg");
+    min-height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+        margin-top: 25%;
+    }
+}
+
+#menuJumbotron{
+    background-image: url("../images/menuJumbotron.jpg");   
+    background-size: cover;
+
    
 .backgroundImage{
     background-image: url("images/seasonalJumbotron.jpg");
+
 }
 
 .seasonal{
     background-color: $seasonal-color;
+    margin-bottom: 5%;
+
+    img{
+        width: 100%;
     margin-bottom: 2%;
     color: white;
 
@@ -24,11 +78,54 @@ body{
 .horizontalImg{
         width: 55%;
         height: auto;
+        margin: 0 auto;
+    }
+
+    .col-5{
+        padding: 0;
+    }
 }
 
-.verticalImg{
-        width: 50%;
+
+#contactJumbotron{
+    background-image: url("../images/contactJumbotron.jpg");   
+    background-size: cover;
+}
+     
+#menuSquares {
+    img{
+        display: block;
+        margin: 0 auto;
         height: auto;
+    }
+
+    a{
+        color: white;
+    }
+    a:hover{
+        color: $mediumBrown-color;
+    }
+}
+
+.thumbnail{
+    position: relative;
+}
+
+.caption{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+  
+.site-footer{
+    color: white;
+    padding: 20px 0;
+    background-color: #472103;
+}
+  
+.bg-custom{
+    background-color: #7A3805;
 }
 
 .site-footer{
@@ -45,7 +142,7 @@ body{
     top: 45%;
     left: 0;
     width: 100%;
-=======
+
 *{
     font-family: sans-serif;
 }
@@ -117,6 +214,7 @@ hr{
 .btn-circle{
     border-radius: 50%;
 }
+  
 .card-img-top {
     width: 100%;
     height: 35vh;
