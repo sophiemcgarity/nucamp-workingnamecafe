@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <!-- Additional CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Averia+Libre&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -14,51 +15,53 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark text-light fixed-top">
-        <div class="container">
-            <div class="collapse navbar-collapse justify-content-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false" href="#">Menu</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="menu.html#menuHot">Hot Drinks</a>
-                            <a class="dropdown-item" href="menu.html#menuCold">Cold Drinks</a>
-                            <a class="dropdown-item" href="menu.html#menuFood">Food</a>
-                            <a class="dropdown-item" href="#">Seasonal</a>
+
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+                <a class="navbar-brand" href="index.html">Cafe Cesura</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#" id="navbarDropdown">Menu</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#menuHot">Hot Drinks</a>
+                                        <a class="dropdown-item" href="#menuCold">Cold Drinks</a>
+                                        <a class="dropdown-item" href="#menuFood">Food</a>
+                                        <a class="dropdown-item" href="seasonal.html">Seasonal</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="jumbotron jumbotron-fluid" id="menuJumbotron">
-        <div class="container container-fluid">
-            <div class="row">
-                <div class="col">
-                    <h1 class="display-4">Our Menu</h1>
-                    <p>At Cafe Cessura we have a choice of hot and cold drinks as well as some yummy bites. Enjoy!</p>
+                </nav>
+            
+    
+        <div id="home" class="bg-menu text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-4">Our Menu</h1>
+                        <p class="d-none d-sm-block">At Cafe Cessura we have a choice of hot and cold drinks as well as some yummy bites. Enjoy!</p>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <a href="menu.pdf" target="_blank" class="btn btn-warning">Download Menu</a>
+                        <a href="seasonal.html" class="btn btn-warning">Seasonal</a>  
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <a href="menu.pdf" target="_blank" class="btn btn-warning">Download Menu</a>
-                    <a href="seasonal.html" class="btn btn-warning">Seasonal</a>
-
-                </div>
-            </div>
+            </div>  
         </div>
-    </header>
 
     <!--Menu-->
     <div id="menuWhole" class=" container text-white mb-5">
@@ -68,7 +71,7 @@
                 <div class="row">
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/americano.jpg" class="card-img-top" alt="americano">
+                            <img src="images/menu/americano.jpg" class="card-img-top" alt="americano">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Americano</h5>
                                 <p class="card-text d-inline orderPrice">$3.50</p>
@@ -80,7 +83,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/latte.jpg" class="card-img-top" alt="latte">
+                            <img src="images/menu/latte.jpg" class="card-img-top" alt="latte">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Latte</h5>
                                 <p class="card-text d-inline orderPrice">$4.50</p>
@@ -92,8 +95,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-
-                            <img src="images/cappuccino.jpg" class="card-img-top" alt="cappuccino">
+                            <img src="images/menu/cappuccino.jpg" class="card-img-top" alt="cappuccino">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Cappuccino</h5>
                                 <p class="card-text d-inline orderPrice">$4.00</p>
@@ -105,7 +107,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/mocha.jpg" class="card-img-top" alt="mocha">
+                            <img src="images/menu/mocha.jpg" class="card-img-top" alt="mocha">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Mocha</h5>
                                 <p class="card-text d-inline orderPrice">$5.00</p>
@@ -117,7 +119,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/espresso.jpg" class="card-img-top" alt="espresso">
+                            <img src="images/menu/espresso.jpg" class="card-img-top" alt="espresso">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Espresso</h5>
                                 <p class="card-text d-inline orderPrice">$3.00</p>
@@ -129,7 +131,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/tea.jpg" class="card-img-top" alt="tea">
+                            <img src="images/menu/tea.jpg" class="card-img-top" alt="tea">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Tea</h5>
                                 <p class="card-text d-inline orderPrice">$3.00</p>
@@ -160,7 +162,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/blueberryJuice.jpg" class="card-img-top" alt="lemonade">
+                            <img src="images/menu/blueberryJuice.jpg" class="card-img-top" alt="lemonade">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Blueberry Juice</h5>
                                 <p class="card-text d-inline orderPrice">$5.50</p>
@@ -172,7 +174,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/lemonade.jpg" class="card-img-top" alt="lemonade">
+                            <img src="images/menu/lemonade.jpg" class="card-img-top" alt="lemonade">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Lemonade</h5>
                                 <p class="card-text d-inline orderPrice">$2.00</p>
@@ -184,7 +186,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/celeryJuice.jpg" class="card-img-top" alt="celery juice">
+                            <img src="images/menu/celeryJuice.jpg" class="card-img-top" alt="celery juice">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Celery Juice</h5>
                                 <p class="card-text d-inline orderPrice">$7.50</p>
@@ -196,7 +198,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/orangeJuice.jpg" class="card-img-top" alt="orange juice">
+                            <img src="images/menu/orangeJuice.jpg" class="card-img-top" alt="orange juice">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Orange Juice</h5>
                                 <p class="card-text d-inline orderPrice">$4.50</p>
@@ -227,7 +229,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/salad.jpg" class="card-img-top" alt="salad">
+                            <img src="images/menu/salad.jpg" class="card-img-top" alt="salad">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Salad</h5>
                                 <p class="card-text d-inline orderPrice">$9.50</p>
@@ -239,7 +241,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/croissant.jpg" class="card-img-top" alt="croissant">
+                            <img src="images/menu/croissant.jpg" class="card-img-top" alt="croissant">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Croissant</h5>
                                 <p class="card-text d-inline orderPrice">$3.00</p>
@@ -251,7 +253,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/acaiBowl.jpg" class="card-img-top" alt="acai bowl">
+                            <img src="images/menu/acaiBowl.jpg" class="card-img-top" alt="acai bowl">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Acai Bowl</h5>
                                 <p class="card-text d-inline orderPrice">$9.00</p>
@@ -263,7 +265,7 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/yoghurt.jpg" class="card-img-top" alt="yoghurt">
+                            <img src="images/menu/yoghurt.jpg" class="card-img-top" alt="yoghurt">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Yoghurt</h5>
                                 <p class="card-text d-inline orderPrice">$3.50</p>
@@ -275,19 +277,19 @@
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/sandwich.jpg" class="card-img-top" alt="sandwich">
+                            <img src="images/menu/sandwich.jpg" class="card-img-top" alt="sandwich">
                             <div class="card-body">
                                 <h5 class="card-title orderName">Sandwich</h5>
                                 <p class="card-text d-inline orderPrice">$8.50</p>
                                 <button class="btn btn-warning btn-circle pull-right" type="button"  data-target="#orderModal" data-toggle="modal" data-price="$8.50" data-name="sandwich">
                                         <i class="fa fa-plus"></i>
-                                    </button>
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-3 px-1">
                         <div class="card bg-latte border-0">
-                            <img src="images/soup.jpg" class="card-img-top" alt="soup">
+                            <img src="images/menu/soup.jpg" class="card-img-top" alt="soup">
                             <div class="card-body">
                                 <h5 class="card-title orderName" id="soup">Soup</h5>
                                 <p class="card-text d-inline orderPrice">$3.50</p>
@@ -321,22 +323,20 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-warning">Add</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Add</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- End of Modal-->
-   
-    
     <!-- footer-->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
 
                 <div class="col text-center">
-                    <a role="button" class="btn btn-link mb-2" href="tel:+12065551234"><i
-                            class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234</a>
+                    <a role="button" class="btn btn-link btn-warning mb-2" href="tel:+12065551234"><i
+                            class="fa fa-phone fa-lg"></i> 1-206-555-1234</a>
                 </div>
                 <div class="col text-center">
                     <a class="btn btn-social-icon btn-instagram btn-secondary" href="http://instagram.com/"><i
@@ -348,59 +348,26 @@
                     <a class="btn btn-social-icon btn-google btn-secondary" href="http://youtube.com/"><i
                             class="fa fa-youtube"></i></a>
                             <form>
-                                    <div class="form-group">
-                                        <label for="newsletter">Join our newsletter</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Email" />
-                                    </div>
+                                <div class="form-group">
+                                    <label for="newsletter">Join our newsletter</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email" />
+                                </div>
                                     <button type="submit" class="btn btn-warning btn-sm">Submit</button>
-                                </form>
+                            </form>
                 </div>
                 <div class="col text-center">
-                        <a role="button" class="btn btn-link" href="mailto:campsite@nucsmp.co"><i
-                            class="fa fa-envelope-o fa-lg text-primary"></i> cesura@cafe.co </a>
+                    <a role="button" class="btn btn-link btn-warning" href="mailto:campsite@nucsmp.co"><i class="fa fa-envelope-o fa-lg"></i> cesura@cafe.co </a>
                 </div>
             </div>
         </div>
     </footer>
  <!--Button to top-->
- <button id="topBtn" class="btn btn-warning btn-lg" title="Go to top">Top</button>
+    <button id="topBtn" class="btn btn-warning btn-lg" title="Go to top">Top</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  
-    <script>
-        $(function(){
-            $('#orderModal').on('show.bs.modal', function (e) {
-            var price = $(e.relatedTarget).data('price');
-            var name = $(e.relatedTarget).data('name');
-        
-            //Pass Values
-            $('#price').html(price);
-         $('#name').html(name);
-    
-      
-    });
-
-    var btn = $('#topBtn');
-
-    $(window).scroll(function() {
-    if ($(this).scrollTop()) {
-        btn.fadeIn();
-    } else {
-        btn.fadeOut();
-    }
-});
-
-    btn.click(function(){
-        $('html, body').animate({
-            scrollTop : 0},500);
-        return false;
-    });
-
-});
-
-    </script>
+    <script src="js/nav.js"></script>
 
 </body>
 
