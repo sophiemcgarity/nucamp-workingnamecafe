@@ -2,8 +2,13 @@ $main-color: #272727;
 $seasonal-color: #CC9165;
 $mediumBrown-color: #915A31;
 $redBrown-color: #7A3805;
+$button-color: #C75B08;
 $darkBrown-color: #472103;
 
+
+*{
+    font-family: sans-serif;
+}
 
 body{
     background-color: $main-color;
@@ -15,6 +20,9 @@ body{
     a{
         text-align: center;
     }
+}
+.navbar-brand{
+    font-family: 'Averia Libre', cursive;
 }
 
 .navbar.solid{
@@ -47,14 +55,45 @@ body{
     background-size: cover;
 
     h1{
-        margin-top: 25%;
+        margin-top: 40%;
     }
 }
 
-#menuJumbotron{
-    background-image: url("../images/menuJumbotron.jpg");   
+.bg-contact{
+    background-image: url("../images/contactJumbotron.jpg");
+    min-height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 
+    h1{
+        margin-top: 40%;
+    }
+}
+
+.bg-about{
+    background-image: url("../images/topAbout.jpg");
+    min-height: 800px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        margin-top: 40%;
+    }
+}
+
+.bg-menu{
+    background-image: url("../images/menuJumbotron.jpg");
+    min-height: 800px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        margin-top: 40%;
+    }
+}
    
 .backgroundImage{
     background-image: url("images/seasonalJumbotron.jpg");
@@ -67,13 +106,9 @@ body{
 
     img{
         width: 100%;
-    margin-bottom: 2%;
+    
     color: white;
-
-    img{
-        margin: 2%;
     }
-}
 
 .horizontalImg{
         width: 55%;
@@ -84,12 +119,6 @@ body{
     .col-5{
         padding: 0;
     }
-}
-
-
-#contactJumbotron{
-    background-image: url("../images/contactJumbotron.jpg");   
-    background-size: cover;
 }
      
 #menuSquares {
@@ -121,74 +150,21 @@ body{
 .site-footer{
     color: white;
     padding: 20px 0;
-    background-color: #472103;
+    background-color: $darkBrown-color;
 }
   
-.bg-custom{
-    background-color: #7A3805;
-}
-
-.site-footer{
-    padding: 20px 0;
-}
-
 .thumbnail{
     position: relative;
 }
-
-.caption{
-    color: white;
-    position: absolute;
-    top: 45%;
-    left: 0;
-    width: 100%;
-
-*{
-    font-family: sans-serif;
-}
-
-.jumbotron{
-    background-image: url("../images/seasonalJumbotron.jpg");   
-    background-size: cover;
-}
-
-#menuJumbotron{
-    background-image: url("../images/menuJumbotron.jpg");   
-    background-size: cover;
-}
-#contactJumbotron{
-    background-image: url("../images/contactJumbotron.jpg");   
-    background-size: cover;
-}
    
-body{
-    font-family: sans-serif; 
-    background-color: $background-color;
-    color: white;
-}
-  
-#menuSquares img{
-    display: block;
-    margin: 0 auto;
-    height: auto;
-}
-  
 .site-footer{
     color: white;
     padding: 20px 0;
-    background-color: #472103;
+    background-color: $redBrown-color;
 }
-  
-.bg-custom{
-    background-color: #7A3805;
-}
-  
+    
 .bg-latte{
-    background-color: #CC9165;
-}
-  
-.breadcrumb li a{
-    color: white;
+    background-color: $seasonal-color;
 }
   
 iframe{
@@ -201,12 +177,12 @@ h1, h3, h2 {
 }
   
 hr{
-    border-top: 1px solid white;
+    border-top: 1px solid $seasonal-color;
     width: 400px;
 }
   
 .btn{
-    background-color: #C75B08;
+    background-color: $button-color;
     color: white;
     font-family: 'Averia Libre', cursive;
 }
@@ -225,6 +201,5 @@ hr{
     display: none;
     position: fixed;
     bottom: 20px; 
-    right: 30px; 
+    right: 30px;
 }
-  
