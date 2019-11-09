@@ -26,13 +26,22 @@ body {
   .navbar {
     background-color: #7A3805; } }
 
-.bg {
+.bgSeasonal {
   background-image: url("../images/bgSeasonal.jpg");
   min-height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  .bg h1 {
+  .bgSeasonal h1 {
+    margin-top: 40%; }
+
+.bgHome {
+  background-image: url("../images/bgHome.jpg");
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bgHome h1 {
     margin-top: 40%; }
 
 .bg-contact {

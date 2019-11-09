@@ -47,8 +47,20 @@ body{
 }
 
 
-.bg{
+.bgSeasonal{
     background-image: url("../images/bgSeasonal.jpg");
+    min-height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+        margin-top: 40%;
+    }
+}
+
+.bgHome{
+    background-image: url("../images/bgHome.jpg");
     min-height: 800px;
     background-position: center;
     background-repeat: no-repeat;
