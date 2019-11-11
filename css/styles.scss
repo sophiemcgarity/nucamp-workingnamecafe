@@ -5,11 +5,6 @@ $redBrown-color: #7A3805;
 $button-color: #C75B08;
 $darkBrown-color: #472103;
 
-
-*{
-    font-family: sans-serif;
-}
-
 body{
     background-color: $main-color;
     color: white;
@@ -69,6 +64,11 @@ body{
     h1{
         margin-top: 40%;
     }
+}
+
+#reward{
+    width: 85%;
+    height: auto;
 }
 
 .bg-contact{
@@ -138,6 +138,7 @@ body{
         display: block;
         margin: 0 auto;
         height: auto;
+        width: 300px;
     }
 
     a{
